@@ -1,0 +1,2 @@
+public record CreateExpenseDto(string Title, decimal Amount, string Category, DateTime Date);
+public record UpdateExpenseDto(string Title, decimal Amount, string Category);

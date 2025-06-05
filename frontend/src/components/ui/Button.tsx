@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "@/styles/ui.module.css";
 
 interface ButtonProps {
   text: string;
@@ -19,6 +20,7 @@ interface ButtonProps {
 const Button = ({ text, type, disabled, onClick }: ButtonProps) => {
   return (
     <button
+      className={styles.button}
       type={type || "button"}
       onClick={onClick || (() => console.log("Clicked"))}
       disabled={disabled || false}
